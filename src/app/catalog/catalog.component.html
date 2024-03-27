@@ -1,0 +1,7 @@
+<ng-container *ngIf="products">
+    <div class="item-container">
+        <div *ngFor="let product of products" class="item" id="item">
+            <app-item [product]="product"></app-item>
+        </div>
+    </div>
+</ng-container>

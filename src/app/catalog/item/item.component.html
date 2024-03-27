@@ -1,0 +1,6 @@
+<p class="title">{{product?.title}}</p>
+<h4 class="subtitle">Price $ {{product?.price}}</h4>
+<img src="https://picsum.photos/200?random={{product?.id}}" alt="Image">
+<input type="number" [formControl]="countFC">
+<button (click)="addToCart()">Add to cart</button>
+<h3 *ngIf="countInCart$ | async as countInCart">{{countInCart}} in cart</h3>
